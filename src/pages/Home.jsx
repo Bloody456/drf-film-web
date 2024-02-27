@@ -116,7 +116,7 @@ function Home() {
             <div className='grid md:flex md:gap-6 md:p-6  justify-center items-center mt-10'>
               {posts &&
                 posts.map((post) => (
-                  <a href={`http://localhost:5173/PortfolioBodas/${post.slug}`} key={post.id} className='mb-6 relative'>
+                  <a href={`https://goweeding.vercel.app/PortfolioBodas/${post.slug}`} key={post.id} className='mb-6 relative'>
                     <img src={`${post.imagePost}`} className='md:w-[300px] md:h-[500px] lg:w-[300px] xl:w-[350px] 2xl:w-[400px] lg:h-[800px]  hover:grayscale duration-500 transition-all ease-linear  object-cover brightness-50' />
 
                     <div className='absolute bottom-14 left-0 right-0 mx-auto text-center'>
