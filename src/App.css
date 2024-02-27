@@ -1,0 +1,48 @@
+.sliderImages{
+    display: flex;
+    width: 430px;
+    height: 600px;
+}
+
+.sliderImages img{
+    width: 0px;
+    flex-grow: 1;
+    object-fit: cover;
+    opacity: .8;
+    transition:  .5s ease;
+}
+
+
+.sliderImages img:hover{
+    cursor: crosshair;
+    width: 300px;
+    opacity: 1;
+    filter: contrast(120%);
+}
+
+.scrollReveal{
+    animation: reveal linear both;
+    animation-timeline: view();
+    animation-range: entry 30% cover 50%;
+
+}
+
+@keyframes reveal{
+    from{
+        opacity: 0;
+        translate: 0 100px;
+        scale: .8;
+    }
+
+    to{
+        opacity: 1;
+        translate: 0 0;
+        scale: 1;;
+    }
+}
+
+body{
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
